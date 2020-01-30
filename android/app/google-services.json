@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "571695495773",
+    "firebase_url": "https://socialapp-4a940.firebaseio.com",
+    "project_id": "socialapp-4a940",
+    "storage_bucket": "socialapp-4a940.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571695495773:android:4f0b23f665d9d5f9f86bb4",
+        "android_client_info": {
+          "package_name": "minglerapp.mingler_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571695495773-c8feqts5k82e6uigil5f4jfej8ea50nu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWOyt5bG09xvnaGblwY1nQJOpRDMmVjV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571695495773-c8feqts5k82e6uigil5f4jfej8ea50nu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
