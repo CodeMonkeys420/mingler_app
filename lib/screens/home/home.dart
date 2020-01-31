@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage>  {
       ),
 
 
-      body:  _children[_currentIndex],
+      body:  Text('homepageee'),
 
       bottomNavigationBar: BottomNavyBar(
         selectedIndex: _currentIndex,
