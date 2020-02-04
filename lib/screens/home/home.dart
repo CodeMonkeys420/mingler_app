@@ -1,4 +1,7 @@
 
+
+import 'package:mingler_app/screens/CardSwipe/SwipeAnimation/index.dart';
+import 'package:mingler_app/screens/admob/earn.dart';
 import 'package:mingler_app/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -6,6 +9,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:mingler_app/shared/bottom_navy_bar.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:mingler_app/screens/settings/settings.dart';
 
 var UserID ;
 
@@ -41,14 +45,13 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage>  {
   int currentIndex = 0;
  
-  int _currentIndex = 0;
+  int _currentIndex = 1;
 
  Position _currentPosition;
   final List<Widget> _children = [
-    // NewsPG(),
-    //  MyHomePageProfile(),
-    //  ReportPg(),
-    //  Facilities(),
+    SettingsPage(),
+    EarnPage(),
+    CardDemo(),
 
   ];
 
@@ -97,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage>  {
       ),
 
 
-      body:  Text('homepageee'),
+      body:  _children[_currentIndex],
 
       bottomNavigationBar: BottomNavyBar(
         selectedIndex: _currentIndex,
@@ -108,22 +111,22 @@ class _MyHomePageState extends State<MyHomePage>  {
         }),
         items: [
           BottomNavyBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.settings),
             title: Text('Settings'),
             activeColor: Colors.blue,
           ),
           BottomNavyBarItem(
-            icon: Icon(Icons.bookmark),
+            icon: Icon(Icons.home),
             title: Text('Home'),
             activeColor: Colors.black,
           ),
           BottomNavyBarItem(
-            icon: Icon(Icons.report_problem),
+            icon: Icon(Icons.attach_money),
             title: Text('Earn'),
             activeColor: Colors.red,
           ),
           BottomNavyBarItem(
-            icon: Icon(Icons.local_activity),
+            icon: Icon(Icons.message),
             title: Text('Messages'),
             activeColor: Colors.green,
           ),

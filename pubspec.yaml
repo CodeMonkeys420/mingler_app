@@ -30,10 +30,29 @@ dependencies:
   firebase_core: ^0.4.0
   flutter_email_sender: ^2.2.2
   firebase_messaging: ^6.0.9
+  firebase_admob: ^0.9.0+10
+  flutter_colorpicker: ^0.2.6
+  flutter_masked_text: ^0.8.0
+  meta: ^1.1.6
+  auto_size_text: ^2.0.0
+  flutter_cupertino_settings: ^0.2.0
+  
+  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 flutter:
   uses-material-design: true
-
+  assets:
+  - assets/img1.jpg
+  - assets/img2.jpg
+  - assets/img3.jpg
+  - assets/img4.jpg
+  - assets/img5.jpg
+  - assets/avatars/avatar-1.jpg
+  - assets/avatars/avatar-2.jpg
+  - assets/avatars/avatar-3.jpg
+  - assets/avatars/avatar-4.jpg
+  - assets/avatars/avatar-5.jpg
+  - assets/avatars/avatar-6.jpg
