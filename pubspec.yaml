@@ -36,6 +36,11 @@ dependencies:
   meta: ^1.1.6
   auto_size_text: ^2.0.0
   flutter_cupertino_settings: ^0.2.0
+
+  camera: ^0.5.7+3
+  path_provider: ^1.6.0
+  video_player: ^0.10.6
+  cached_network_image: ^2.0.0
   
   
 

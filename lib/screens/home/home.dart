@@ -2,6 +2,7 @@
 
 import 'package:mingler_app/screens/CardSwipe/SwipeAnimation/index.dart';
 import 'package:mingler_app/screens/admob/earn.dart';
+import 'package:mingler_app/screens/messenger/messengerpage.dart';
 import 'package:mingler_app/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -50,8 +51,9 @@ class _MyHomePageState extends State<MyHomePage>  {
  Position _currentPosition;
   final List<Widget> _children = [
     SettingsPage(),
-    EarnPage(),
     CardDemo(),
+    EarnPage(),
+    MessengerPage(),
 
   ];
 
