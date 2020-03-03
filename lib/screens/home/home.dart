@@ -72,34 +72,26 @@ class _MyHomePageState extends State<MyHomePage>  {
     }
 
     return Scaffold(
-      appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+//       appBar: AppBar(
+//         title: Row(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: [
            
- FlatButton.icon(
-                padding: const EdgeInsets.only(right: 60.0),
-                 label: Text(''),
-                icon: Icon(Icons.exit_to_app),
-                onPressed: ()async {
-                   await _auth.signOut();
-                },
-             ),
+//  FlatButton.icon(
+//                 padding: const EdgeInsets.only(right: 60.0),
+//                  label: Text(''),
+//                 icon: Icon(Icons.exit_to_app),
+//                 onPressed: ()async {
+//                    await _auth.signOut();
+//                 },
+//              ),
 
-            // Image.asset(
-            //   'Assets/awasd.png',
-            //   fit: BoxFit.contain,
-            //   height: 20,
-            //   scale: 1,
-            //   alignment: Alignment.topCenter,
-            // ),
-  
-          ],
+//           ],
             
-        ),
-          actions: <Widget>[
-      ]
-      ),
+//         ),
+//           actions: <Widget>[
+//       ]
+//       ),
 
 
       body:  _children[_currentIndex],
